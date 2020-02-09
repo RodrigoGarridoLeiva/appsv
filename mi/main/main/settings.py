@@ -25,7 +25,7 @@ SECRET_KEY = '+pmag&=ulzs8is%uc-3_zd_5b-nw=dcu10c8q0$w(u5#-+#(z#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mdappnew.herokuapp.com']
 
 
 # Application definition
@@ -119,4 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATIC_ROOT = os.path.join((BASE_DIR), 'static')
 STATIC_URL = '/static/'
+
