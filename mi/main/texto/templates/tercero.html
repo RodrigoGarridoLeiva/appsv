@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MNDA </title>
+</head>
+<body>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family:Century Gothic;  
+
+
+		}
+
+	
+		body{
+
+			background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url({% static 'i.jpg'%});
+			height: 100vh;
+			-webkit-background-size:cover;
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+		}
+
+
+		.logo img{
+			  display: block;
+  			margin-left: auto;
+ 			 margin-right: auto;
+			width:300px;
+
+		}
+
+		.title{
+  			 margin-top: 20px;
+		     text-transform: uppercase;
+			 color: aqua; 
+		  	 margin-left: 110px;
+		     font-size: 55px;
+		  	 position: absolute;
+
+		}
+		.title span{
+ 	 		 display: inline-flex;
+  
+		}
+
+		.title span:nth-child(even){
+			  font-size: 25px;
+			  overflow: hidden;
+			  transition: ease-in-out 0.5s;
+			  border-bottom: 2px solid white;
+			 
+			  text-transform: lowercase;
+			  color: white;
+			  letter-spacing: -1em;
+			 
+			}
+		.title:hover span:nth-child(even){
+			  letter-spacing: 0;
+			}
+
+		.titulo{
+			position: absolute;
+			top:5%;
+			left:5%;
+			
+		}
+		.titulo h1{
+			font-size: 40px;
+			color: white;
+		}
+		
+		.botones{
+			position: absolute;
+			top:55%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			
+		}
+		.botones ul {
+			list-style-type: none;
+		}
+
+		.botones ul li{
+			display: inline-block;
+
+		}
+		.botones ul li a{
+			text-decoration: none;
+			color: white;
+			padding:  30px 100px;
+			border: 1px solid white;
+			transition-duration: .3s;
+		}
+		.botones ul li a:hover{
+			background-color:  white;
+			font-size: 50px;
+			color: black;
+			transition-duration: .5s;
+		
+		}
+
+		.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #906C66;
+  color: white;
+  padding: 30px 10px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #906C66;
+  color: black;
+}
+			
+	</style>
+</br></br>
+
+	 	<div class="navbar">
+	 		<div class="logo">
+	 			<img src="{% static 'f.png'%}">	 		
+	 		</div>
+ 	
+	 	</div>
+	 	<div class="titulo"></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	 		<h1> Creo que es en parte por todas estas cosas y muchas mas que te quiero, y cada día lo hago más…
+ </br></br>
+Si bien es complicado llevar una relación de tan lejos, siento que hago lo correcto y que todo lo que hago es un paso más para acércame a ti…
+ </h1>
+	 	</div>
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+<a href="{%url 'cuarto'%}"> <button class="block"> Continuar </button></a> </br> 
+ 
+
+	 	
+	 	
+ 	
+</body>
+</html>
